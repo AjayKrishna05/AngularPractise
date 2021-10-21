@@ -1,0 +1,19 @@
+<h3>ngIf</h3>
+
+<!-- By default set to true -->
+<p *ngIf="true">This statement shows up if the condition is true</p>
+
+<!-- By default set to false -->
+<!-- dosent shows up in browser since its false -->
+<p *ngIf="false">This statement shows up if the condition is false</p>
+
+<!-- If-Else Demonstration -->
+<h3>If-Else Demonstration</h3>
+<p *ngIf="status;then trueBlock else elseBlock">Returning this statement since it is true</p>
+
+<ng-template #trueBlock>
+  <p>returning this statement since it is true</p>
+</ng-template>
+<ng-template #elseBlock>
+  <p>returning this statement since it is false</p>
+</ng-template>
